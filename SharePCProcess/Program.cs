@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SharePc
+namespace SharePC
 {
     class Program
     {
@@ -12,10 +12,10 @@ namespace SharePc
         {
            
            
-            SharePc pc1 = new SharePc();
+            SharePC pc1 = new SharePC();
 
 
-            String invitation = pc1.getControlString();
+            String invitation = pc1.GetControlString();
 
             Console.WriteLine(invitation);
             
@@ -24,7 +24,7 @@ namespace SharePc
             pc1.destroy();
 
             
-            String invitation2 = pc1.getControlString();
+            String invitation2 = pc1.GetControlString();
             Console.WriteLine(invitation2);
 
         
