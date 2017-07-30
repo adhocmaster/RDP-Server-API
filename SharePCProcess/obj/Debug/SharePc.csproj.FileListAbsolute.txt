@@ -1,0 +1,5 @@
+c:\users\acer\documents\visual studio 2013\Projects\SharePCProcess\SharePCProcess\bin\Debug\SharePCProcess.exe.config
+c:\users\acer\documents\visual studio 2013\Projects\SharePCProcess\SharePCProcess\obj\Debug\SharePCProcess.exe
+c:\users\acer\documents\visual studio 2013\Projects\SharePCProcess\SharePCProcess\obj\Debug\SharePCProcess.pdb
+c:\users\acer\documents\visual studio 2013\Projects\SharePCProcess\SharePCProcess\bin\Debug\SharePCProcess.exe
+c:\users\acer\documents\visual studio 2013\Projects\SharePCProcess\SharePCProcess\bin\Debug\SharePCProcess.pdb
