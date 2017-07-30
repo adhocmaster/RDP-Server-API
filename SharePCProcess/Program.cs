@@ -19,7 +19,7 @@ namespace SharePc
 
             Console.WriteLine(invitation);
             
-            String abn = Console.ReadLine();
+            String line1 = Console.ReadLine();
 
             pc1.destroy();
 
@@ -29,11 +29,11 @@ namespace SharePc
 
         
 
-            String ab = Console.ReadLine();
+            String line2 = Console.ReadLine();
 
             pc1.destroy();
             
-            String abc = Console.ReadLine();
+            String line3 = Console.ReadLine();
 
         }
     }

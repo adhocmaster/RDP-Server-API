@@ -1,0 +1,6 @@
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\bin\Debug\RDPServer3.exe.config
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\bin\Debug\RDPServer3.exe
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\bin\Debug\RDPServer3.pdb
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\obj\Debug\SharePcInterface.csprojResolveAssemblyReference.cache
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\obj\Debug\RDPServer3.exe
+C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\obj\Debug\RDPServer3.pdb

@@ -44,6 +44,8 @@ namespace SharePc
 
             Microsoft.Win32.SystemEvents.SessionSwitch += new Microsoft.Win32.SessionSwitchEventHandler(SystemEvents_SessionSwitch);
 
+            //string line = "";
+
             proc = new Process
             {
                 StartInfo = new ProcessStartInfo
@@ -55,11 +57,23 @@ namespace SharePc
                     CreateNoWindow = true
                 }
             };
-             
-            proc.Start();
-            string line = proc.StandardOutput.ReadLine();
+
+            try
+            {
+                proc.Start();
+                            
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("the error is :" + e);
+                throw e;
+            }
+
+            String line = proc.StandardOutput.ReadLine();
             //Console.WriteLine(line);
             return line;
+
+
         }
 
         public void destroy()

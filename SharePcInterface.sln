@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePCProcess", "SharePCProcess\SharePCProcess.csproj", "{28CC08DD-F336-42D5-9F1B-561348C33C52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePcInterface", "SharePCProcess\SharePcInterface.csproj", "{28CC08DD-F336-42D5-9F1B-561348C33C52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
