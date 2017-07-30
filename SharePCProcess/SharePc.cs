@@ -8,14 +8,14 @@ using System.ServiceProcess;
 using Microsoft.Win32;
 
 
-namespace SharePc
+namespace SharePC
 {
 
-    class SharePc : ServiceBase
+    public class SharePC : ServiceBase
     {
         public Process proc=null;
         
-        public SharePc()
+        public SharePC()
         {
 
           
@@ -38,7 +38,7 @@ namespace SharePc
             }
         }
 
-        public String getControlString()
+        public String GetControlString()
         {
             Microsoft.Win32.SystemEvents.SessionSwitch -= new Microsoft.Win32.SessionSwitchEventHandler(SystemEvents_SessionSwitch);
 
@@ -82,14 +82,13 @@ namespace SharePc
             {
 
                 Microsoft.Win32.SystemEvents.SessionSwitch -= new Microsoft.Win32.SessionSwitchEventHandler(SystemEvents_SessionSwitch);
-                
 
                 proc.Kill();
 
                 proc = null;
             }
             else {
-                Console.WriteLine("process null.No process has been created.");
+                Console.WriteLine("process null. No process has been created.");
             }
 
            
