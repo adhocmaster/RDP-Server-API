@@ -119,11 +119,16 @@ namespace SharePC
                         Console.WriteLine( "the error is :" + e );
                     }
 
-                    Process temp = proc;
+                    try {
+
+                        proc.Kill();
+
+                    } catch {
+
+                    }
 
                     proc = null;
 
-                    temp.Kill();
 
                 } else {
                     Console.WriteLine( "process null. No process has been created." );
