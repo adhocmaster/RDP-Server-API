@@ -20,6 +20,9 @@ namespace SharePC
                 if (a1 == "1")
                 {
                     pc1.triggerResolutionSwitch();
+                    /* String invitation = pc1.GetControlString();
+                     Console.WriteLine(invitation);
+                     String line3 = Console.ReadLine();*/
                     
                 }
                 else {
@@ -52,8 +55,3 @@ namespace SharePC
         }
     }
 }
-
-            pc1.triggerResolutionSwitch();
-           /* String invitation = pc1.GetControlString();
-            Console.WriteLine(invitation);
-            String line3 = Console.ReadLine();*/

@@ -1,35 +1,5 @@
-<<<<<<< HEAD
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\bin\Debug\RDPServer3.exe.config
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\bin\Debug\RDPServer3.exe
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\bin\Debug\RDPServer3.pdb
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\obj\Debug\SharePcInterface.csprojResolveAssemblyReference.cache
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\obj\Debug\RDPServer3.exe
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\obj\Debug\RDPServer3.pdb
-E:\projects\wpf\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.dll.config
-E:\projects\wpf\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.dll
-E:\projects\wpf\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.pdb
-E:\projects\wpf\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.dll
-E:\projects\wpf\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.pdb
-E:\languageproject\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.dll.config
-E:\languageproject\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.dll
-E:\languageproject\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.pdb
-E:\languageproject\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.dll
-E:\languageproject\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.pdb
-=======
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\bin\Debug\RDPServer3.exe.config
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\bin\Debug\RDPServer3.exe
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\bin\Debug\RDPServer3.pdb
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\obj\Debug\SharePcInterface.csprojResolveAssemblyReference.cache
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\obj\Debug\RDPServer3.exe
-C:\Users\Acer\Documents\Visual Studio 2013\Projects\RDPPro\SharePCProcess\SharePCProcess\SharePCProcess\obj\Debug\RDPServer3.pdb
-E:\projects\wpf\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.dll.config
-E:\projects\wpf\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.dll
-E:\projects\wpf\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.pdb
-E:\projects\wpf\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.dll
-E:\projects\wpf\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.pdb
 F:\AdilvaiAccLanguageProject\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.exe.config
 F:\AdilvaiAccLanguageProject\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.exe
 F:\AdilvaiAccLanguageProject\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.pdb
 F:\AdilvaiAccLanguageProject\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.exe
 F:\AdilvaiAccLanguageProject\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.pdb
->>>>>>> RazinServerAPI

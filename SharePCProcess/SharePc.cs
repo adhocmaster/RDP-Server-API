@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.ServiceProcess;
 using Microsoft.Win32;
 using System.IO;
+using System.Threading;
 
 namespace SharePC
 {
@@ -143,37 +144,7 @@ namespace SharePC
         
         }
 
-        public void triggerResolutionSwitch()
-        {
-            CResolution res1 = new CResolution();
-            DEVMODE1 dm1 = res1.getCurrentResolution();
-            List<DEVMODE1> dmList = res1.getSupportedResolutionList();
-            int len = dmList.Count;
-
-            //int selectedIndex = -1;
-            
-            DEVMODE1 dm2 = dmList[len-1];
-
-            if (dm1.dmPelsWidth == dm2.dmPelsWidth && dm1.dmPelsHeight == dm2.dmPelsHeight)
-            {
-                if (len - 2 >= 0)
-                {
-                    dm2 = dmList[len - 2];
-                }
-                else 
-                {
-                    dm2 = dmList[0];
-                }
-            }
-
-            Console.WriteLine("the switched resolution:" + dm2.dmPelsHeight+"x"+dm2.dmPelsWidth);
-          
-            res1.setSupportedResolution(dm2);
-            Thread.Sleep(2000);
-            res1.setSupportedResolution(dm1);
-
-        }
-
+       
         public void triggerResolutionSwitch()
         {
             CResolution res1 = new CResolution();
@@ -194,6 +165,3 @@ namespace SharePC
         }
     }
 }
-
-using System.IO;
-using System.Threading;
