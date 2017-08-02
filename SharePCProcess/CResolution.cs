@@ -75,6 +75,7 @@ namespace SharePC
 {
     class CResolution
     {
+        public int selectedIndexOfCurrentResolution;
         public CResolution()
         {
 
@@ -147,16 +148,16 @@ namespace SharePC
             dm.dmSize = (short)Marshal.SizeOf(dm);
             if (0 != User_32.EnumDisplaySettings(null, User_32.ENUM_CURRENT_SETTINGS, ref dm))
             {
-                //Console.WriteLine("\t" +
-                //  "{0} by {1}, " +
-                //  "{2} bit, " +
-                //  "{3} degrees, " +
-                //  "{4} hertz",
-                //  dm.dmPelsWidth,
-                //  dm.dmPelsHeight,
-                //  dm.dmBitsPerPel,
-                //  dm.dmDisplayOrientation * 90,
-                //  dm.dmDisplayFrequency);
+                /* Console.WriteLine("\t" +
+                   "{0} by {1}, " +
+                   "{2} bit, " +
+                   "{3} degrees, " +
+                   "{4} hertz",
+                   dm.dmPelsWidth,
+                   dm.dmPelsHeight,
+                   dm.dmBitsPerPel,
+                   dm.dmDisplayOrientation * 90,
+                   dm.dmDisplayFrequency);*/
             }
             else
             {
@@ -174,18 +175,18 @@ namespace SharePC
             int i = 0;
             while (0 != User_32.EnumDisplaySettings(null, i++, ref dm)) ;
 
-            //Console.WriteLine("\t" +
-            //          "{0} by {1}, " +
-            //          "{2} bit, " +
-            //          "{3} degrees, " +
-            //          "{4} hertz," +
-            //          "{5} color",
-            //          dm.dmPelsWidth,
-            //          dm.dmPelsHeight,
-            //          dm.dmBitsPerPel,
-            //          dm.dmDisplayOrientation * 90,
-            //          dm.dmDisplayFrequency,
-            //          dm.dmYResolution);
+            Console.WriteLine("\t" +
+                      "{0} by {1}, " +
+                      "{2} bit, " +
+                      "{3} degrees, " +
+                      "{4} hertz," +
+                      "{5} color",
+                      dm.dmPelsWidth,
+                      dm.dmPelsHeight,
+                      dm.dmBitsPerPel,
+                      dm.dmDisplayOrientation * 90,
+                      dm.dmDisplayFrequency,
+                      dm.dmYResolution);
 
             return dm;
         }
@@ -233,34 +234,35 @@ namespace SharePC
         {
             List<DEVMODE1> ResolutionList = new List<DEVMODE1>();
 
+            DEVMODE1 CurrentResolution = getCurrentResolution();
+
             DEVMODE1 dm = new DEVMODE1();
             dm.dmDeviceName = new String(new char[32]);
             dm.dmFormName = new String(new char[32]);
             dm.dmSize = (short)Marshal.SizeOf(dm);
 
-
-
             int previousResolutionX = 0;
             int previousResolutionY = 0;
 
-            int i = 0;
+            int i = 0, k = 0;
             while (0 != User_32.EnumDisplaySettings(null, i++, ref dm))
             {
-                if ((dm.dmPelsWidth > previousResolutionX || dm.dmPelsHeight > previousResolutionY) && (dm.dmBitsPerPel >= 32))
+                if ((dm.dmPelsWidth > previousResolutionX || dm.dmPelsHeight > previousResolutionY) && dm.dmBitsPerPel >= 32)
                 {
-                    //Console.WriteLine("\t" +
-                    // "{0} by {1}, " +
-                    // "{2} bit, " +
-                    // "{3} degrees, " +
-                    // "{4} hertz," +
-                    // "{5} color",
-                    // dm.dmPelsWidth,
-                    // dm.dmPelsHeight,
-                    // dm.dmBitsPerPel,
-                    // dm.dmDisplayOrientation * 90,
-                    // dm.dmDisplayFrequency,
-                    // dm.dmYResolution);
-
+                    /*  Console.WriteLine("\t" +
+                       "{0} by {1}, " +
+                       "{2} bit, " +
+                       "{3} degrees, " +
+                       "{4} hertz," +
+                       "{5} color",
+                       dm.dmPelsWidth,
+                       dm.dmPelsHeight,
+                       dm.dmBitsPerPel,
+                       dm.dmDisplayOrientation * 90,
+                       dm.dmDisplayFrequency,
+                       dm.dmYResolution);*/
+                    k++;
+                    if (dm.dmPelsWidth == CurrentResolution.dmPelsWidth && dm.dmPelsHeight == CurrentResolution.dmPelsHeight && dm.dmBitsPerPel == CurrentResolution.dmBitsPerPel) selectedIndexOfCurrentResolution = k;
                     ResolutionList.Add(dm);
 
                     previousResolutionX = dm.dmPelsWidth;
@@ -281,5 +283,3 @@ namespace SharePC
         }
     }
 }
-
-
