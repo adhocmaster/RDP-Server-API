@@ -156,7 +156,7 @@ namespace SharePC
             int currentposition = res1.selectedIndexOfCurrentResolution;
 
             if (currentposition - 2 >= 0) dm2 = dmlist[currentposition - 2];
-            else dm2 = dmlist[currentposition];
+            else dm2 = dmlist[currentposition-1];
 
 
             res1.setSupportedResolution(dm2);
