@@ -9,3 +9,8 @@ E:\projects\wpf\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.dll
 E:\projects\wpf\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.pdb
 E:\projects\wpf\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.dll
 E:\projects\wpf\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.pdb
+F:\AdilvaiAccLanguageProject\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.exe.config
+F:\AdilvaiAccLanguageProject\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.exe
+F:\AdilvaiAccLanguageProject\RDP-Server-API\SharePCProcess\bin\Debug\RDPServer3.pdb
+F:\AdilvaiAccLanguageProject\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.exe
+F:\AdilvaiAccLanguageProject\RDP-Server-API\SharePCProcess\obj\Debug\RDPServer3.pdb

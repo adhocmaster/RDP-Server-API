@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.ServiceProcess;
 using Microsoft.Win32;
 using System.IO;
+using System.Threading;
 
 
 namespace SharePC
@@ -142,6 +143,25 @@ namespace SharePC
         {
             destroy();
         
+        }
+
+        public void triggerResolutionSwitch()
+        {
+            CResolution res1 = new CResolution();
+            DEVMODE1 dm1 = res1.getCurrentResolution();
+            List<DEVMODE1> dmlist = res1.getSupportedResolutionList();
+
+            DEVMODE1 dm2;
+
+            int currentposition = res1.selectedIndexOfCurrentResolution;
+
+            if (currentposition - 2 >= 0) dm2 = dmlist[currentposition - 2];
+            else dm2 = dmlist[currentposition];
+
+
+            res1.setSupportedResolution(dm2);
+            Thread.Sleep(2000);
+            res1.setSupportedResolution(dm1);
         }
     }
 }

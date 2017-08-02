@@ -14,8 +14,8 @@ namespace SharePC
            
             SharePC pc1 = new SharePC();
 
-
-            String invitation = pc1.GetControlString();
+            pc1.triggerResolutionSwitch();
+           /* String invitation = pc1.GetControlString();
 
             Console.WriteLine(invitation);
             
@@ -33,7 +33,7 @@ namespace SharePC
 
             pc1.destroy();
             
-            String line3 = Console.ReadLine();
+            String line3 = Console.ReadLine();*/
 
         }
     }
